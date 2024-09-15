@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milestone</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .box {
+            width: 400px;
+            height: 700px;
+            border: 2px solid black;
+            background-color: lightgray;
+            padding: 10px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            background-image: url(resume.jpg);
+        }
+
+
+        .box1{
+            width: 400px;
+            height: 700px;
+            border: 2px solid black;
+            background-color: lightgray;
+            padding: 10px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        
+            
+            
+        }
+
+        #resumeOutput img {
+            max-width: 150px;
+            border-radius: 50%;
+            align-items: center;
+            
+        }
+
+        .editable:hover {
+            background-color: #e8e8e8;
+        }
+    </style>
+</head>
+<body>
+    <h1>Milestone 5: Unique Path and Shareable Link</h1>
+    <div class="box">
+        <form id="resumeForm">
+            <fieldset class="fieldset">
+                <legend>Personal Information</legend>
+
+                <label for="username">Resume URL</label>
+                <input type="text" id="username" name="username"> <br>
+        
+                <label for="name" class="visually-hidden">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter Name" required><br>
+        
+                <label for="email" class="visually-hidden">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter Email Address" required><br>
+        
+                <label for="phone" class="visually-hidden">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter Phone Number" required><br>
+
+                <label for="profilePicture" class="visually-hidden">Profile picture</label>
+                <input type="file" id="profilePicture" name="profilePicture" accept="image/*"/><br><br>
+              </fieldset>
+        
+              <fieldset class="fieldset">
+                <legend>Education</legend>
+                <textarea id="education" name="education" rows="4" placeholder="Education required" required></textarea>
+              </fieldset>
+        
+              <fieldset class="fieldset">
+                <legend>Experience</legend>
+                <textarea id="experience" name="experience" rows="4" placeholder="Show Experience" required></textarea>
+              </fieldset>
+        
+              <fieldset class="fieldset">
+                <legend>Skills</legend>
+                <textarea id="skills" name="skills" rows="4" placeholder="Enter Your Skills" required></textarea>
+              </fieldset>
+        
+              <button type="submit">Generate Resume Below</button>
+        </form>
+    </div>
+    <footer>
+        <h5>&copy; 2024 Waleed Khalid</h5>
+      </footer>
+
+    <script src="script.js"></script>
+
+    <div id="resumeOutput"  class= "box1"style="display:none; margin-top: 20px;  align items: center" ></div>
