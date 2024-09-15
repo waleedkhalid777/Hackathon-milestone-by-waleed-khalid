@@ -1,0 +1,92 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 20px;
+  /* background: url('pic.jpg')no-repeat center center/cover rgba(0, 0, 0, 0.9); */
+  background: hsla(0, 0%, 13%, 1) url(picture.jpg);
+  color: #ddf;
+}
+
+h1 {
+  /* text-align: center; */
+  margin: 0 auto;
+  width: 80%;
+  margin-bottom: 2rem;
+  color: rgb(249, 249, 255);
+}
+
+.fieldset {
+  position: relative;
+  height: 100%;
+  margin: 10px 0;
+}
+input {
+  width: 80%;
+  padding: 8px;
+  margin: 5px auto;
+  border: 0;
+  outline: 0;
+  background: #42a5f51f;
+  backdrop-filter: blur(20px);
+  opacity: 0.78;
+  color: #ddf;
+}
+
+::placeholder {
+  color: #ddf;
+}
+
+textarea {
+  width: 80%;
+  padding: 8px;
+  margin: 5px auto;
+  border: 0;
+  outline: 0;
+  background: #42a5f51f;
+  backdrop-filter: blur(20px);
+  opacity: 0.78;
+  color: #ddf;
+}
+
+form {
+  /* background: red; */
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#resumeOutput {
+  width: 500px;
+  /* margin: 0 auto; */
+  padding: 20px;
+  border-radius: 2px;
+  /* background-color: rgb(0, 255, 64); */
+  background: rgba(29, 29, 29, 9);
+  box-shadow: 0 4px 8px rgba(36, 27, 27, 1.20);
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 10%;
+  height:100%;
+  display: none;
+}
+
+#resumeOutput h2 {
+  color: rgb(119, 5, 110);
+}
+
+button {
+  position: relative;
+  align-items: normal;
+  background: #42a5f51f;
+  border: 0;
+  outline: 0;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 2px;
+  color: #ddf;
+  &:hover {
+    background-color: #4caf50aa;
+    transform: scale(1.02);
+    transition: 0.3s;
+  }
+}
