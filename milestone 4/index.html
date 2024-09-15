@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Milestone 4: Editable Builder <br>By: Waleed Khalid</h1>
+
+    <form id="resumeForm">
+      <fieldset class="fieldset">
+        <legend>Personal Information</legend>
+
+        <label for="name" class="visually-hidden">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter Name"
+          required
+        /><br />
+
+        <label for="email" class="visually-hidden">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter Email Address"
+          required
+        /><br />
+
+        <label for="phone" class="visually-hidden">Phone</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="Enter Phone Number"
+          required
+        />
+      </fieldset>
+
+      <fieldset class="fieldset">
+        <legend>Education</legend>
+        <label for="education" class="visually-hidden">Education</label>
+        <textarea
+          id="education"
+          name="education"
+          rows="4"
+          placeholder="Education required"
+          required
+        ></textarea>
+      </fieldset>
+
+      <fieldset class="fieldset">
+        <legend>Experience</legend>
+        <label for="experience" class="visually-hidden">Experience</label>
+        <textarea
+          id="experience"
+          name="experience"
+          rows="4"
+          placeholder="Show Experience"
+          required
+        ></textarea>
+      </fieldset>
+
+      <fieldset class="fieldset">
+        <legend>Skills</legend>
+        <!-- <label for="skills" class="visually-hidden">Skills</label> -->
+        <textarea
+          id="skills"
+          name="skills"
+          rows="4"
+          placeholder="Enter Your Skills"
+          required
+        ></textarea>
+      </fieldset>
+
+      <button type="submit">Generate Resume Below</button>
+    </form>
+
+    <footer>
+      <h5>&copy; 2024 Waleed Khalid</h5>
+    </footer>
+
+    <div id="resumeOutput"></div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

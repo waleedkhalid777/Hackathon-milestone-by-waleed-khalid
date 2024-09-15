@@ -1,0 +1,77 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 20px;
+  background: hsla(0, 0%, 13%, 1) url(picture.jpg);
+  color: #ddf;
+}
+
+h1 {
+  margin: 0 auto;
+  width: 80%;
+  margin-bottom: 2rem;
+  color: rgb(249, 249, 255);
+}
+
+.fieldset {
+  position: relative;
+  height: 100%;
+  margin: 10px 0;
+}
+
+input, textarea {
+  width: 90%;
+  padding: 8px;
+  margin: 5px auto;
+  border: 0;
+  outline: 0;
+  background: #42a5f51f;
+  backdrop-filter: blur(20px);
+  opacity: 0.78;
+  color: #ddf;
+}
+
+::placeholder {
+  color: #ddf;
+}
+
+form {
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#resumeOutput {
+  width: 650px;
+  padding: 20px;
+  border-radius: 2px;
+  background: rgba(29, 29, 29, 0.9);
+  box-shadow: 0 4px 8px rgba(36, 27, 27, 0.8);
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 10%;
+  height: 100%;
+  display: none;
+  cursor: pointer;
+}
+
+#resumeOutput h2 {
+  color: rgb(119, 5, 110);
+}
+
+button {
+  position: relative;
+  background: #42a5f51f;
+  border: 0;
+  outline: 0;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 2px;
+  color: #ddf;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #4caf50aa;
+  transform: scale(1.02);
+}
